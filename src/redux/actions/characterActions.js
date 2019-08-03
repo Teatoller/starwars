@@ -12,9 +12,11 @@ export function getCharacters() {
       );
 }
 
-export function setCharacters(characters) {
+function setCharacters(characters) {
     return {
       type: SET_CHARACTERS,
       characters,
     };
   }
+
+  export default getCharacters;
