@@ -1,6 +1,5 @@
 import { SET_CHARACTER_PROFILE } from "../constants/characterProfileTypes";
 
-
 const initialState = {};
 
 export default (state = initialState, action) => {

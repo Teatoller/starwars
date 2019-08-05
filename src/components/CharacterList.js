@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import setCurrentCharacter from "../redux/actions/characterIdActions";
+import { getCharacterProfile } from "../redux/actions/characterProfileActions";
 
 class CharacterList extends Component {
   render() {
@@ -30,6 +31,7 @@ const mapDispatchToProps = dispatch => ({
   setCharacter(id) {
     return () => {
       dispatch(setCurrentCharacter(id));
+      dispatch(getCharacterProfile(id));
     };
   }
 });

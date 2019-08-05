@@ -7,8 +7,10 @@ export function getCharacters() {
     fetch(`${API_URL}/people`)
       .then(res => res.json())
       .then(res => res.results)
-      .then(characters =>
+      .then(characters => {
+        console.log("characyers", characters)
         dispatch(setCharacters(characters))
+      }
       );
 }
 

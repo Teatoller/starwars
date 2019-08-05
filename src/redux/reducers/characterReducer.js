@@ -1,4 +1,4 @@
-import { SET_CHARACTERS } from '../actions/characterActions';
+import { SET_CHARACTERS } from "../actions/characterActions";
 
 const initialState = [];
 
