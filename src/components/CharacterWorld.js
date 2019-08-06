@@ -1,5 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
+import './Style.css';
+
 
 const isKnown = text => text && text !== "unknown";
 
@@ -7,7 +9,7 @@ class CharacterWorld extends React.Component {
   render() {
     const { world } = this.props;
     return (
-      <div>
+      <div className="character-world" >
         <h1>World</h1>
         {isKnown(world.name) && <p>Name: {world.name}</p>}
         {isKnown(world.population) && <p>Population: {world.population}</p>}

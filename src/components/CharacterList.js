@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import setCurrentCharacter from "../redux/actions/characterIdActions";
 import { getCharacterProfile } from "../redux/actions/characterProfileActions";
+import './Style.css';
 
 class CharacterList extends Component {
   render() {
     const { characters, setCharacter } = this.props;
     return (
-      <div>
+      <div className="character-name" >
         <h1>Characters</h1>
         <ul>
           {characters.map((c, i) => (

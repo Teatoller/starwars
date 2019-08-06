@@ -1,0 +1,30 @@
+.character-name {
+    background-color: orange;
+    width: 400px;
+    position: fixed;
+    padding: 10px;
+}
+.character-profile {
+    background-color: lightgreen;
+    width: 400px;
+    margin-left: 450px;
+    height: 277px;
+    padding: 10px;
+}
+
+.character-world {
+    background-color: yellowgreen;
+    /* margin-left: 450px; */
+    width: 400px;
+    height: 277px;
+    position: fixed;
+    padding: 10px;
+}
+
+.character-movie {
+    background-color: skyblue;
+    width: 400px;
+    height: 277px;
+    margin-left: 450px;
+    padding: 10px;
+}
